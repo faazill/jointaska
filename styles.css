@@ -729,33 +729,78 @@ body {
     }
 
     .benefits-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
     }
 
     .benefit-card {
-        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        padding: 1.2rem;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        background: transparent;
+        transition: background-color 0.3s ease;
+    }
+
+    .benefit-card:hover {
+        transform: none;
+        background-color: rgba(37, 99, 235, 0.05);
+    }
+
+    .benefit-card::before {
+        display: none;
     }
 
     .card-icon {
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
+        margin: 0 1rem 0 0;
+        background: #f1f5f9;
+        flex-shrink: 0;
     }
 
     .benefit-card i {
-        font-size: 1.5rem;
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
+        font-size: 1.2rem;
+        color: #25D366;
+    }
+
+    .benefit-card:hover .card-icon {
+        transform: none;
+        background: #f1f5f9;
+    }
+
+    .benefit-card:hover i {
+        color: #25D366;
     }
 
     .benefit-card h3 {
-        font-size: 1.1rem;
+        margin: 0;
+        font-size: 1rem;
+        text-align: left;
+        color: #1e293b;
     }
 
     .benefit-card p {
-        font-size: 0.9rem;
+        display: none;
+    }
+
+    .more-card {
+        background: transparent;
+        border: none;
+        border-bottom: none;
+    }
+
+    .more-card .card-icon {
+        background: #f1f5f9;
+    }
+
+    .more-card:hover {
+        background: rgba(37, 99, 235, 0.05);
     }
 
     .faq {
@@ -824,19 +869,20 @@ body {
     }
 
     .benefit-card {
-        padding: 1.2rem;
+        padding: 1rem;
     }
 
     .card-icon {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     .benefit-card i {
-        font-size: 1.3rem;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+        font-size: 1.1rem;
+    }
+
+    .benefit-card h3 {
+        font-size: 0.95rem;
     }
 
     .faq-question {
