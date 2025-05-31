@@ -32,7 +32,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    height: 100dvh; /* Dynamic viewport height for mobile browsers */
+    height: 100dvh;
     min-height: 100vh;
     min-height: 100dvh;
     position: relative;
@@ -41,7 +41,7 @@ body {
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 1rem;
+    padding: 2rem 1rem;
     overflow: hidden;
     margin: 0;
     box-sizing: border-box;
@@ -100,15 +100,14 @@ body {
 .hero-content {
     width: 100%;
     max-width: 800px;
-    padding: 1rem;
+    padding: 2rem 1rem;
     position: relative;
     z-index: 1;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.5rem;
-    padding: 2rem 1rem;
+    gap: 2rem;
 }
 
 .hero h1 {
@@ -741,6 +740,13 @@ body {
 @media (max-width: 768px) {
     .hero {
         padding: 4rem 1rem;
+        min-height: 120vh;
+        min-height: 120dvh;
+    }
+
+    .hero-content {
+        gap: 1.5rem;
+        padding: 1rem;
     }
 
     .hero h1 {
@@ -748,20 +754,32 @@ body {
         gap: 0.5rem;
         text-align: center;
         line-height: 1.3;
-    }
-
-    .heading-line::after {
-        bottom: -3px;
+        margin-bottom: 1rem;
     }
 
     .hero-description {
         font-size: 0.95rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .hero-stats {
         gap: 1rem;
         padding: 0 1rem;
+        margin: 1rem 0;
+    }
+
+    .trust-badges {
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .cta-button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .heading-line::after {
+        bottom: -3px;
     }
 
     .stat-item {
@@ -774,11 +792,6 @@ body {
 
     .stat-label {
         font-size: 0.8rem;
-    }
-
-    .trust-badges {
-        gap: 1rem;
-        margin-bottom: 1.5rem;
     }
 
     .trust-item {
@@ -922,13 +935,38 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 3rem 1rem;
+        min-height: 130vh;
+        min-height: 130dvh;
+    }
+
+    .hero-content {
+        gap: 1.2rem;
+    }
+
     .hero h1 {
         font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
     }
 
     .hero-stats {
-        gap: 0.5rem;
-        padding: 0 0.5rem;
+        gap: 0.8rem;
+        margin: 0.8rem 0;
+    }
+
+    .trust-badges {
+        margin: 0.8rem 0;
+    }
+
+    .cta-button {
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
     }
 
     .stat-item {
@@ -941,11 +979,6 @@ body {
 
     .stat-label {
         font-size: 0.7rem;
-    }
-
-    .trust-badges {
-        flex-direction: column;
-        align-items: center;
     }
 
     .trust-item {
@@ -1013,16 +1046,25 @@ body {
 /* Landscape Mode */
 @media (max-height: 500px) and (orientation: landscape) {
     .hero {
-        min-height: auto;
+        min-height: 150vh;
+        min-height: 150dvh;
         padding: 2rem 1rem;
     }
 
+    .hero-content {
+        gap: 1rem;
+    }
+
     .hero-stats {
-        margin: 1rem 0;
+        margin: 0.8rem 0;
     }
 
     .trust-badges {
-        margin: 1rem 0;
+        margin: 0.8rem 0;
+    }
+
+    .cta-button {
+        margin: 0.8rem 0;
     }
 }
 
