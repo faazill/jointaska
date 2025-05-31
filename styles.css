@@ -31,18 +31,17 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
-    min-height: 100dvh;
     width: 100%;
+    height: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 2rem 1rem;
     overflow: hidden;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -98,29 +97,29 @@ body {
 
 .hero-content {
     width: 100%;
-    max-width: 800px;
-    padding: 2rem 1rem;
+    height: 100%;
+    max-width: 1200px;
+    padding: 5vh 5vw;
     position: relative;
     z-index: 1;
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-    min-height: 100%;
+    align-items: center;
+    gap: 4vh;
 }
 
 .hero h1 {
-    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 6vh, 4rem);
     line-height: 1.2;
-    margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1vw;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .heading-line {
@@ -203,58 +202,44 @@ body {
 }
 
 .hero-description {
-    font-size: clamp(0.9rem, 3vw, 1.1rem);
-    margin-bottom: 1rem;
-    padding: 0 0.5rem;
+    font-size: clamp(1rem, 3vh, 1.4rem);
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
     line-height: 1.6;
     opacity: 0.9;
+    margin: 0;
+    padding: 0 2vw;
 }
 
 .hero-stats {
     display: flex;
-    justify-content: space-between;
-    gap: clamp(0.5rem, 2vw, 1rem);
-    margin: clamp(1rem, 3vw, 1.5rem) 0;
-    padding: 0 0.5rem;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4vw;
     width: 100%;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1000px;
+    margin: 0;
+    padding: 0 2vw;
 }
 
 .stat-item {
     flex: 1;
     min-width: 0;
-    padding: 0.5rem;
     text-align: center;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .stat-item i {
-    font-size: clamp(1.2rem, 4vw, 2rem);
-    margin-bottom: 0.5rem;
+    font-size: clamp(1.5rem, 4vh, 2.5rem);
+    margin-bottom: 1vh;
     color: #FFD700;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    -webkit-text-stroke: 1px #FFD700;
 }
 
 .stat-number {
-    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-size: clamp(1.5rem, 4vh, 2.5rem);
     font-weight: 700;
     display: block;
 }
 
 .stat-label {
-    font-size: clamp(0.7rem, 2.5vw, 1rem);
+    font-size: clamp(0.9rem, 2vh, 1.2rem);
     display: block;
     opacity: 0.9;
 }
@@ -263,17 +248,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: clamp(0.5rem, 2vw, 1rem);
-    margin: clamp(1rem, 3vw, 1.5rem) 0;
+    gap: 2vw;
+    width: 100%;
+    max-width: 800px;
+    margin: 0;
+    padding: 0 2vw;
 }
 
 .trust-item {
-    padding: 0.5rem 1rem;
-    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-    min-height: 44px;
+    padding: clamp(0.5rem, 1.5vh, 1rem) clamp(1rem, 2vw, 2rem);
+    font-size: clamp(0.9rem, 2vh, 1.1rem);
+    min-height: clamp(40px, 5vh, 50px);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1vw;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -281,14 +269,8 @@ body {
 }
 
 .trust-item i {
+    font-size: clamp(1.1rem, 2.5vh, 1.3rem);
     color: #FFD700;
-    font-size: 1.1rem;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    -webkit-text-stroke: 1px #FFD700;
 }
 
 .trust-item span {
@@ -306,62 +288,23 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 3vw, 2rem);
-    min-height: clamp(46px, 5vw, 54px);
-    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    padding: clamp(0.8rem, 2vh, 1.2rem) clamp(1.5rem, 3vw, 2.5rem);
+    min-height: clamp(50px, 6vh, 60px);
+    font-size: clamp(1rem, 2.5vh, 1.3rem);
     font-weight: 600;
-    width: 100%;
-    max-width: 320px;
-    margin: clamp(0.8rem, 2vw, 1rem) auto;
+    width: clamp(280px, 30vw, 320px);
     background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
     color: white;
     text-decoration: none;
     border-radius: 12px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.2),
-        transparent
-    );
-    transition: 0.5s;
-}
-
-.cta-button:hover::before {
-    left: 100%;
+    margin: 0;
 }
 
 .cta-button i {
-    font-size: 1.4rem;
-    margin-right: 10px;
-    transition: transform 0.3s ease;
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-    background: linear-gradient(135deg, #22c55e 0%, #0f766e 100%);
-}
-
-.cta-button:hover i {
-    transform: scale(1.1) rotate(-10deg);
-}
-
-.cta-button:active {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    font-size: clamp(1.2rem, 3vh, 1.5rem);
+    margin-right: clamp(0.5rem, 1vw, 1rem);
 }
 
 /* Benefits Section */
@@ -738,23 +681,17 @@ body {
 }
 
 @media (max-width: 768px) {
-    .hero {
-        padding: clamp(2rem, 5vh, 4rem) 1rem;
-    }
-
     .hero-content {
-        gap: clamp(1.2rem, 3vh, 1.5rem);
-        padding: clamp(1rem, 3vh, 2rem) 1rem;
+        padding: 4vh 4vw;
+        gap: 3vh;
     }
 
     .hero-stats {
-        gap: clamp(0.8rem, 2vw, 1rem);
-        margin: clamp(0.8rem, 2vh, 1rem) 0;
+        gap: 3vw;
     }
 
     .trust-badges {
-        gap: clamp(0.5rem, 2vw, 0.8rem);
-        margin: clamp(0.8rem, 2vh, 1rem) 0;
+        gap: 1.5vw;
     }
 
     .cta-button {
@@ -919,22 +856,17 @@ body {
 }
 
 @media (max-width: 480px) {
-    .hero {
-        padding: clamp(1.5rem, 4vh, 3rem) 1rem;
-    }
-
     .hero-content {
-        gap: clamp(1rem, 2.5vh, 1.2rem);
+        padding: 3vh 3vw;
+        gap: 2.5vh;
     }
 
     .hero-stats {
-        gap: clamp(0.5rem, 1.5vw, 0.8rem);
-        margin: clamp(0.6rem, 1.5vh, 0.8rem) 0;
+        gap: 2vw;
     }
 
     .trust-badges {
-        gap: clamp(0.4rem, 1.5vw, 0.5rem);
-        margin: clamp(0.6rem, 1.5vh, 0.8rem) 0;
+        gap: 1vw;
     }
 
     .cta-button {
@@ -1018,20 +950,17 @@ body {
 
 /* Landscape Mode */
 @media (max-height: 500px) and (orientation: landscape) {
-    .hero {
-        padding: clamp(1.5rem, 3vh, 2rem) 1rem;
-    }
-
     .hero-content {
-        gap: clamp(0.8rem, 2vh, 1rem);
+        padding: 2vh 2vw;
+        gap: 2vh;
     }
 
     .hero-stats {
-        margin: clamp(0.6rem, 1.5vh, 0.8rem) 0;
+        gap: 2vw;
     }
 
     .trust-badges {
-        margin: clamp(0.6rem, 1.5vh, 0.8rem) 0;
+        gap: 1vw;
     }
 
     .cta-button {
@@ -1041,49 +970,33 @@ body {
 
 /* Tall Screens */
 @media (min-height: 1000px) {
-    .hero {
-        padding: clamp(3rem, 5vh, 5rem) 1rem;
-    }
-
     .hero-content {
-        gap: clamp(2rem, 4vh, 3rem);
+        padding: 6vh 6vw;
+        gap: 5vh;
     }
 
     .hero-stats {
-        margin: clamp(1.5rem, 3vh, 2rem) 0;
+        gap: 5vw;
     }
 
     .trust-badges {
-        margin: clamp(1.5rem, 3vh, 2rem) 0;
+        gap: 3vw;
     }
 }
 
-/* Ensure content is visible on very small screens */
+/* Very Small Screens */
 @media (max-height: 400px) {
-    .hero {
-        padding: 1rem;
-    }
-
     .hero-content {
-        gap: 0.8rem;
-    }
-
-    .hero h1 {
-        font-size: clamp(1.5rem, 4vw, 2rem);
-        margin-bottom: 0.5rem;
-    }
-
-    .hero-description {
-        font-size: 0.9rem;
-        margin-bottom: 0.5rem;
+        padding: 1vh 1vw;
+        gap: 1.5vh;
     }
 
     .hero-stats {
-        margin: 0.5rem 0;
+        gap: 1.5vw;
     }
 
     .trust-badges {
-        margin: 0.5rem 0;
+        gap: 1vw;
     }
 
     .cta-button {
