@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Taska Force - Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="register-page">
+    <div class="register-container">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Join Taska Force</h2>
+                <p>Fill in your details to join our community</p>
+            </div>
+            <form id="joinForm" class="join-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp Number</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="Enter your WhatsApp number" required>
+                    <p class="input-warning">You will receive hiring updates and job notifications through this WhatsApp number</p>
+                </div>
+                <div class="form-group">
+                    <label for="college">College</label>
+                    <input type="text" id="college" name="college" placeholder="Enter your college name" required>
+                </div>
+                <div class="form-buttons">
+                    <a href="index.html" class="cta-button back-button">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </a>
+                    <button type="submit" class="cta-button">
+                        <i class="fas fa-graduation-cap"></i> Join Community
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+    document.getElementById('joinForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const whatsapp = document.getElementById('whatsapp').value;
+        const college = document.getElementById('college').value;
+        
+        // Here you can add your WhatsApp group link
+        const whatsappLink = 'https://chat.whatsapp.com/YOUR_GROUP_LINK';
+        
+        // Open WhatsApp link in new tab
+        window.open(whatsappLink, '_blank');
+    });
+    </script>
+</body>
+</html> 

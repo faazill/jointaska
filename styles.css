@@ -292,26 +292,22 @@ body {
 }
 
 .cta-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(0.8rem, 2vh, 1.2rem) clamp(1.5rem, 3vw, 2.5rem);
-    min-height: clamp(50px, 6vh, 60px);
-    font-size: clamp(1rem, 2.5vh, 1.3rem);
-    font-weight: 600;
-    width: clamp(280px, 30vw, 320px);
-    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-    color: white;
+    gap: 0.5rem;
     text-decoration: none;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-    margin: 0;
 }
 
 .cta-button i {
-    font-size: clamp(1.2rem, 3vh, 1.5rem);
-    margin-right: clamp(0.5rem, 1vw, 1rem);
+    font-size: 1.2rem;
 }
 
 /* Benefits Section */
@@ -875,388 +871,75 @@ body {
     }
 }
 
-
-
-/* College Selection Page Styles */
-.college-select-container {
+/* Registration Page Styles */
+.register-page {
     min-height: 100vh;
-    min-height: 100dvh;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.college-select-content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.college-select-content h1 {
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    color: #1e293b;
-    text-align: center;
-    margin-bottom: 0.5rem;
-}
-
-.subtitle {
-    text-align: center;
-    color: #64748b;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-}
-
-.college-search {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-}
-
-.search-input {
-    width: 100%;
-    padding: 1rem 3rem 1rem 1.5rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 12px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background: white;
-}
-
-.search-input:focus {
-    outline: none;
-    border-color: #25D366;
-    box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.1);
-}
-
-.search-icon {
-    position: absolute;
-    right: 1.2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #94a3b8;
-    font-size: 1.2rem;
-}
-
-.colleges-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.college-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    border: 2px solid transparent;
-    position: relative;
-    overflow: hidden;
-}
-
-.college-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(to bottom, #25D366, #128C7E);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.college-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-color: #25D366;
-}
-
-.college-card:hover::before {
-    opacity: 1;
-}
-
-.college-icon {
-    background: #f8fafc;
-    width: 50px;
-    height: 50px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    transition: all 0.3s ease;
-}
-
-.college-card:hover .college-icon {
-    background: #25D366;
-    transform: scale(1.1);
-}
-
-.college-icon i {
-    font-size: 1.5rem;
-    color: #25D366;
-    transition: all 0.3s ease;
-}
-
-.college-card:hover .college-icon i {
-    color: white;
-}
-
-.college-info {
-    flex: 1;
-    min-width: 0;
-}
-
-.college-info h3 {
-    font-size: 1.1rem;
-    color: #1e293b;
-    line-height: 1.4;
-    font-weight: 600;
-    margin: 0 0 0.5rem 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.college-location {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #64748b;
-    font-size: 0.9rem;
-}
-
-.college-location i {
-    color: #25D366;
-    font-size: 0.9rem;
-}
-
-.other-college {
-    text-align: center;
-    margin-top: 2rem;
     padding: 2rem;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.other-college p {
-    color: #64748b;
-    margin-bottom: 1rem;
-}
-
-.whatsapp-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.8rem 1.5rem;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.whatsapp-link:hover {
-    background: #22c55e;
-    transform: translateY(-2px);
-}
-
-.whatsapp-link i {
-    font-size: 1.2rem;
-}
-
-@media (max-width: 768px) {
-    .college-select-container {
-        padding: 1rem;
-    }
-
-    .colleges-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .college-card {
-        padding: 1.2rem;
-    }
-
-    .college-icon {
-        width: 45px;
-        height: 45px;
-    }
-
-    .college-icon i {
-        font-size: 1.3rem;
-    }
-
-    .college-info h3 {
-        font-size: 1rem;
-    }
-
-    .college-location {
-        font-size: 0.85rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .college-select-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .subtitle {
-        font-size: 0.9rem;
-    }
-
-    .search-input {
-        padding: 0.8rem 2.5rem 0.8rem 1rem;
-        font-size: 0.9rem;
-    }
-
-    .college-card {
-        padding: 1rem;
-    }
-
-    .college-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .college-icon i {
-        font-size: 1.2rem;
-    }
-
-    .college-info h3 {
-        font-size: 0.95rem;
-    }
-
-    .college-location {
-        font-size: 0.8rem;
-    }
-}
-
-/* Join Button Styles */
-.join-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 2rem;
-    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-    color: white;
-    border: none;
-    border-radius: 12px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-}
-
-.join-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-}
-
-.join-button i {
-    font-size: 1.2rem;
-}
-
-/* Popup Styles */
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
+.register-container {
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-}
-
-.popup-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.popup-content {
-    background: white;
-    padding: 2rem;
-    border-radius: 20px;
-    width: 90%;
     max-width: 500px;
-    position: relative;
-    transform: translateY(20px);
-    transition: transform 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.popup-overlay.active .popup-content {
-    transform: translateY(0);
+.form-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
-.close-popup {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #64748b;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: color 0.3s ease;
-}
-
-.close-popup:hover {
-    color: #1e293b;
-}
-
-.popup-content h2 {
-    font-size: 1.8rem;
-    color: #1e293b;
-    margin-bottom: 0.5rem;
-    text-align: center;
-}
-
-.popup-subtitle {
-    color: #64748b;
+.form-header {
     text-align: center;
     margin-bottom: 2rem;
+}
+
+.form-header h2 {
+    color: #1e293b;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 0.5rem;
     color: #1e293b;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
     font-weight: 500;
 }
 
 .form-group input {
     width: 100%;
-    padding: 0.8rem 1rem;
+    padding: 1rem 1.5rem;
     border: 2px solid #e2e8f0;
-    border-radius: 10px;
+    border-radius: 12px;
+    background: white;
+    color: #1e293b;
     font-size: 1rem;
     transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: #94a3b8;
 }
 
 .form-group input:focus {
@@ -1265,72 +948,44 @@ body {
     box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.1);
 }
 
-.submit-button {
-    width: 100%;
-    padding: 1rem;
-    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.form-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.form-buttons .cta-button {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.back-button {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.back-button:hover {
+    background: #cbd5e1;
+}
+
+/* Remove the old form styles */
+.form-step,
+.suggestions,
+.suggestion-item {
+    display: none;
+}
+
+.input-warning {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 0.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 0.5rem;
 }
 
-.submit-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-}
-
-.submit-button i {
-    font-size: 1.2rem;
-}
-
-@media (max-width: 768px) {
-    .popup-content {
-        padding: 1.5rem;
-    }
-
-    .popup-content h2 {
-        font-size: 1.5rem;
-    }
-
-    .form-group input {
-        padding: 0.7rem 0.9rem;
-    }
-
-    .submit-button {
-        padding: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .popup-content {
-        padding: 1.2rem;
-    }
-
-    .popup-content h2 {
-        font-size: 1.3rem;
-    }
-
-    .popup-subtitle {
-        font-size: 0.9rem;
-    }
-
-    .form-group label {
-        font-size: 0.9rem;
-    }
-
-    .form-group input {
-        font-size: 0.9rem;
-    }
-
-    .submit-button {
-        font-size: 1rem;
-    }
+.input-warning::before {
+    content: 'ℹ️';
+    font-size: 1rem;
 } 

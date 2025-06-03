@@ -18,6 +18,7 @@
         <div class="video-background">
             <video autoplay muted loop playsinline>
                 <source src="bg.mp4" type="video/mp4">
+                <!-- Fallback background if video fails to load -->
                 <div class="fallback-background"></div>
             </video>
             <div class="overlay"></div>
@@ -25,6 +26,7 @@
         <div class="hero-content">
             <h1>
                 <span class="heading-line">Part time Jobs for College Students</span>
+                
                 <span class="heading-brand">Join Taska <span class="force-text">Force</span></span>
             </h1>
             
@@ -55,7 +57,7 @@
                 </div>
                 <div class="trust-item">
                     <i class="fas fa-shield-alt"></i>
-                    <span>Certifications</span>
+                    <span>Certificatons</span>
                 </div>
                 <div class="trust-item">
                     <i class="fas fa-home"></i>
@@ -63,9 +65,7 @@
                 </div>
             </div>
 
-            <a href="register.html" class="cta-button join-button">
-                <i class="fas fa-graduation-cap"></i> Join Taska Force
-            </a>
+            <a href="college-select.html" class="cta-button"><i class="fas fa-graduation-cap"></i> Join Taska Force Club in Your College</a>
         </div>
     </section>
 
@@ -73,31 +73,5 @@
    
 
     <script src="script.js"></script>
-    <script>
-    // Form navigation
-    document.querySelector('.join-button').addEventListener('click', function() {
-        document.getElementById('step1').style.display = 'none';
-        document.getElementById('step2').style.display = 'flex';
-    });
-
-    document.querySelector('.prev-step').addEventListener('click', function() {
-        document.getElementById('step2').style.display = 'none';
-        document.getElementById('step1').style.display = 'flex';
-    });
-
-    // Form submission
-    document.getElementById('joinForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = document.getElementById('name').value;
-        const whatsapp = document.getElementById('whatsapp').value;
-        const college = document.getElementById('college').value;
-        
-        // Here you can add your WhatsApp group link
-        const whatsappLink = 'https://chat.whatsapp.com/YOUR_GROUP_LINK';
-        
-        // Open WhatsApp link in new tab
-        window.open(whatsappLink, '_blank');
-    });
-    </script>
 </body>
 </html> 
